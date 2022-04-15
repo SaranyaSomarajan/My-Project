@@ -1,0 +1,34 @@
+<suite name="MyTestSuite">
+	<test name="Chrome Test">
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="executeClasses.ExecuteAdminUsers"></class>
+			<class name="executeClasses.ExecuteManageExpense"></class>
+			<class name="executeClasses.ExecuteManageDeliveryBoy"></class>
+	        <class name="executeClasses.ExecuteLoginPage"></class>
+			<class name="executeClasses.ExecuteManageCOD"></class>
+			<class name="executeClasses.ExecuteManageLocation"></class>
+			<class name="executeClasses.ExecuteManageUsers"></class>
+            <class name="executeClasses.ExecuteManageProduct"></class>
+            <class name="executeClasses.ExecuteManageCategory"></class>
+
+
+		</classes>
+	</test>
+<test name="Edge Test">
+		<parameter name="Browser" value="edge"></parameter>
+		<classes>
+			<class name="executeClasses.ExecuteAdminUsers"></class>
+			<class name="executeClasses.ExecuteManageExpense"></class>
+
+		</classes>
+	</test>
+	<test name="FireFox Test">
+		<parameter name="Browser" value="firefox"></parameter>
+		<classes>
+			<class name="executeClasses.ExecuteAdminUsers"></class>
+			<class name="executeClasses.ExecuteManageExpense"></class>
+
+		</classes>
+	</test>
+</suite>

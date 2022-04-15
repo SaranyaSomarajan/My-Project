@@ -1,0 +1,12 @@
+elementRepository\ManageCOD.class
+utilities\GenaralUtilities.class
+elementRepository\LoginPage.class
+elementRepository\ManageLocation.class
+elementRepository\ManageDeliveryBoy.class
+elementRepository\ManageExpense.class
+utilities\ExcelUtility.class
+utilities\ScreenShot.class
+elementRepository\Category.class
+utilities\ExplicitWait.class
+elementRepository\AdminUsers.class
+elementRepository\ManageProduct.class

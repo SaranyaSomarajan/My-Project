@@ -1,0 +1,19 @@
+<suite name="MyTestSuite">
+	<test name="Chrome Test">
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="executeClasses.ExecuteAdminUsers"></class>
+			<class name="executeClasses.ExecuteCategory"></class>
+			<class name="executeClasses.ExecuteLoginPage"></class>
+			<class name="executeClasses.ExecuteManageCOD"></class>
+			<class name="executeClasses.ExecuteManageExpense"></class>
+			<class name="executeClasses.ExecuteManageLocation"></class>
+			<class name="executeClasses.ExecuteManagePage"></class>
+			<class name="executeClasses.ExecuteManageProduct"></class>
+			<class name="executeClasses.ExecuteManageUsers"></class>
+			<class name="executeClasses.ExecuteManageSlider"></class>
+			<class name="executeClasses.ExecuteManageOrders"></class>
+			<class name="executeClasses.ExecuteManageDeliveryBoy"></class>
+		</classes>
+	</test>
+</suite>

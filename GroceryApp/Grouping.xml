@@ -1,0 +1,13 @@
+<suite name="MyTestSuite">
+	<test name="Chrome Test">
+		<parameter name="Browser" value="chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Critical" />
+			</run>
+		</groups>
+		<classes>
+			<class name="executeClasses.ExecuteAdminUsers"></class>
+		</classes>
+	</test>
+</suite>

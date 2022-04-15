@@ -1,0 +1,8 @@
+<suite name="MyTestSuite">
+	<test name="Chrome Test">
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="executeClasses.ExecuteManageDeliveryBoy"></class>
+		</classes>
+	</test>
+</suite>

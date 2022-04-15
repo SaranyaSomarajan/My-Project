@@ -1,0 +1,69 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 7, Errors: 0, Skipped: 1, Time elapsed: 69.479 s <<< FAILURE! - in TestSuite
+executeClasses.ExecuteLoginPage.verifyLoggedUsers  Time elapsed: 0.071 s  <<< FAILURE!
+java.lang.NullPointerException
+	at executeClasses.ExecuteLoginPage.verifyLoggedUsers(ExecuteLoginPage.java:17)
+
+executeClasses.ExecuteLoginPage.verifyRemberCheckBoxSelected  Time elapsed: 1.18 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <input type="checkbox" id="remember" class="ace" name="remember_me" value="yes"> is not clickable at point (614, 443). Other element would receive the click: <label for="remember">...</label>
+  (Session info: chrome=99.0.4844.74)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-3FFEOHO', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0697d085f3de5f8324ac2fbfd328cf16, clickElement {id=ebb1f59a-781b-419c-9e97-7ae53a74627e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\saran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64479}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64479/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0697d085f3de5f8324ac2fbfd328cf16)] -> xpath: //input[@name='remember_me']]
+Session ID: 0697d085f3de5f8324ac2fbfd328cf16
+	at executeClasses.ExecuteLoginPage.verifyRemberCheckBoxSelected(ExecuteLoginPage.java:36)
+
+executeClasses.ExecuteManageDeliveryBoy.beforeMethod  Time elapsed: 1.819 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Browser' is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in C:\Users\saran\eclipse-workspace\GroceryApp\GroceryApp.xml
+
+executeClasses.ExecuteManageDeliveryBoy.afterMethod[[TestResult name={null} status=CREATED method=ExecuteManageDeliveryBoy.verifyUpdateAlertMsg()[pri:0, instance:executeClasses.ExecuteManageDeliveryBoy@6043cd28] output={null}]](0)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.NullPointerException
+
+executeClasses.ExecuteAdminUsers.verifyAdminUsersArrow  Time elapsed: 12.529 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='btn btn-rounded btn-warning']"}
+  (Session info: chrome=99.0.4844.74)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-3FFEOHO', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [749e595f74efbd7d21c4a3a1479aee86, findElement {using=xpath, value=//a[@class='btn btn-rounded btn-warning']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\saran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64576}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64576/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 749e595f74efbd7d21c4a3a1479aee86
+	at executeClasses.ExecuteAdminUsers.verifyAdminUsersArrow(ExecuteAdminUsers.java:21)
+
+executeClasses.ExecuteAdminUsers.verifySearchUserName  Time elapsed: 11.403 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#\/\/input\[\@id\=\'un\'\]"}
+  (Session info: chrome=99.0.4844.74)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-3FFEOHO', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7a4f89a6f2f743950a450293d71aacd9, findElement {using=id, value=//input[@id='un']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\saran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64626}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64626/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a4f89a6f2f743950a450293d71aacd9
+	at executeClasses.ExecuteAdminUsers.verifySearchUserName(ExecuteAdminUsers.java:60)
+
+executeClasses.ExecuteAdminUsers.verifyUserTypeDropDown  Time elapsed: 11.027 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='ut']"}
+  (Session info: chrome=99.0.4844.74)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-3FFEOHO', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e27916bb2872c687587274bc4a60968, findElement {using=xpath, value=//select[@id='ut']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\saran\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64651}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64651/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e27916bb2872c687587274bc4a60968
+	at executeClasses.ExecuteAdminUsers.verifyUserTypeDropDown(ExecuteAdminUsers.java:73)
+
